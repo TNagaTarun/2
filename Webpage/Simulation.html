@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Simulation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Simulation</title>
+</head>
+<script>function out()
+    {
+        var w = document.getElementById("wire");
+        var f = document.getElementById("fault");
+        var wireVal = w.options[w.selectedIndex].text;
+        var falutVal = f.options[f.selectedIndex].text;
+        document.getElementById("textValue").innerHTML=output(wireVal,falutVal);
+    }
+    function output(w, f)
+    {
+       
+        if (f=="None") 
+        {
+            return "&emsp;Equaiton of fault detected = "+"x⊕y⊕z";
+        }
+        else if (f=="SA0"){
+            if (w=="x"){
+                return "&emsp;Equaiton of fault detected = "+"y⊕z";
+            }
+            else if (w=="y"){
+                return "&emsp;Equaiton of fault detected = "+"x⊕z";
+            }
+            else if (w=="z"){
+                return "&emsp;Equaiton of fault detected = "+"x⊕y";
+            }
+            else if (w=="w"){
+                return "&emsp;Equaiton of fault detected = "+"z";
+            }
+
+        }
+        else if (f=="SA1"){
+
+            if (w=="x"){
+                return "&emsp;Equaiton of fault detected = "+"y̅⊕z";
+            }
+            else if (w=="y"){
+                return "&emsp;Equaiton of fault detected = "+"x̅⊕z";
+            }
+            else if (w=="z"){
+                return "&emsp;Equaiton of fault detected = "+"(x̅⊕y̅)'";
+            }
+            else if (w=="w"){
+                return "&emsp;Equaiton of fault detected = "+"z̅";
+            }
+        }
+
+    }</script>
+<body>
+    <header><nav>
+        <div class="d1">
+            <a href="Home.html" style="float: left;">
+                <img src="vlab.png" alt="logo" style="float: left;height: 65px; width: 200px;margin: 0px;"></a>
+            
+            <p id="p1"><a href="Simulation.html" title="Simulation">Simulation</a></p>
+            <p id="p2"><a href="Procedure.html" title="Procedure">Procedure</a></p>
+            <p id="p3"><a href="Theory.html" title="Theory">Theory</a></p>
+            <p id="p4"><a href="Aim.html" title="Aim">Aim</a></p>
+            <p id="p5"><a href="Home.html" title="Home">Home</a></p>
+        </div>
+    </nav></header>
+    <br>
+    <h1 style="text-align: center;">jhdbjk</h1>
+    <p id="hed">Detection of SA0 and SA1 faults in 3-Bit Even Parity Generator </p> 
+    <hr>
+    <fieldset style="border:double;">
+        <legend id="leg">Even Parity Generator</legend>
+      <b><p style="font-size: 25px;">&emsp; Fault &emsp;&emsp;  Wire</p></b>  
+    <p>&emsp;
+    <select name="fault" id="fault" style="vertical-align:left;margin:0px 10px; font-size: 20px;"  >
+            <option value="None">None</option>
+            <option value="SA0">SA0</option>
+            <option value="SA1">SA1</option>
+    </select>
+    &emsp;
+    <select name="wire" id="wire" style="vertical-align:centre;margin:0px 10px; font-size: 20px;">
+        <option value="x">x</option>
+        <option value="y">y</option>
+        <option value="w">w</option>
+        <option value="z">z</option>
+    </select>
+    </p>
+    <img src="Circuit_Diagram.png" alt="Circuit_Diagram" style="vertical-align:text-top;margin:30px 100px">
+    <p>&emsp;<button onclick = "out();" style="font-size: 20px;">Submit</button></p>
+    <b><p id = "textValue" style="font-size: 20px;" >&emsp;Equaiton of fault detected = </p></b>
+   
+    </fieldset>
+
+</body>
+</html>

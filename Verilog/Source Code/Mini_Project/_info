@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/Projects/work
+vEvenp
+!s110 1639885664
+!i10b 1
+!s100 2<3c=7KUMTn08Z2hP=c;T0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IhDCOIY4`lfFP?VVSGQN><3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/intelFPGA/Projects/DDS_Mini_Project
+w1639885535
+8C:/intelFPGA/Projects/DDS_Mini_Project/design.v
+FC:/intelFPGA/Projects/DDS_Mini_Project/design.v
+!i122 0
+L0 1 16
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1639885664.000000
+!s107 C:/intelFPGA/Projects/DDS_Mini_Project/design.v|
+!s90 -reportprogress|300|-work|Mini_Project|-stats=none|C:/intelFPGA/Projects/DDS_Mini_Project/design.v|
+!i113 1
+Z4 o-work Mini_Project
+Z5 tCvgOpt 0
+n@evenp
+vtestevenp
+!s110 1639885665
+!i10b 1
+!s100 z78`dDld6?Ak7hV;K;L0S2
+R0
+I?zfJLMl_965l7gaYB8Z_^0
+R1
+R2
+w1639885659
+8C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v
+FC:/intelFPGA/Projects/DDS_Mini_Project/testbench.v
+!i122 1
+L0 2 80
+R3
+r1
+!s85 0
+31
+!s108 1639885665.000000
+!s107 C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v|
+!s90 -reportprogress|300|-work|Mini_Project|-stats=none|C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v|
+!i113 1
+R4
+R5

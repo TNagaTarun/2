@@ -1,0 +1,53 @@
+header{
+    height: 500px;
+    background-color:white ;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    z-index: 12;
+    margin: 0px;
+    padding-bottom: 50px;
+    background-size: cover;
+    margin-left: 0%;
+    border-bottom:8px solid ;
+    border-color:green;
+}
+
+.d1 a{
+    display: inline;
+    float: right;
+    font-size: 25px;
+    padding-top: 20px ; 
+    padding-right: 70px;
+    padding-bottom: 20px ; 
+    color: blue;
+}
+a:hover{
+    color:orangered;
+}
+a:active{
+    color:green ;
+}
+#hed{
+    text-align: center;
+    font-size: 45px;
+    color:dodgerblue;
+    margin-bottom: 15px;
+}
+#p3 a:visited{
+    color: green;
+}
+#intro{
+    font-size: 24px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+#head{
+    font-size: 28px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+#head,#intro{
+    font-family: 'Noto Sans', sans-serif;
+}

@@ -1,0 +1,65 @@
+# Compile of design.v was successful.
+# Compile of testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui Mini_Project.testevenp
+# vsim -gui Mini_Project.testevenp 
+# Start time: 09:18:18 on Dec 19,2021
+# Loading Mini_Project.testevenp
+# Loading Mini_Project.Evenp
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (9) for port 'choice'. The port definition is at: C:/intelFPGA/Projects/DDS_Mini_Project/design.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testevenp/O File: C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v Line: 6
+# WARNING: No extended dataflow license exists
+add wave sim:/testevenp/*
+run
+# Fault Detected:a stuck @0
+#                    0 value of a=0,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                   10 value of a=0,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                   20 value of a=0,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                   30 value of a=0,b=1,c=1;;intermediate Output w=1,Final Output P=0
+#                   40 value of a=1,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                   50 value of a=1,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                   60 value of a=1,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                   70 value of a=1,b=1,c=1;;intermediate Output w=1,Final Output P=0
+# ** Note: $finish    : C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v(79)
+#    Time: 80 ps  Iteration: 0  Instance: /testevenp
+# 1
+# Break in Module testevenp at C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v line 79
+run
+#                   80 value of a=0,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                   90 value of a=0,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                  100 value of a=0,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                  110 value of a=0,b=1,c=1;;intermediate Output w=1,Final Output P=0
+#                  120 value of a=1,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                  130 value of a=1,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                  140 value of a=1,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                  150 value of a=1,b=1,c=1;;intermediate Output w=1,Final Output P=0
+# ** Note: $finish    : C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v(79)
+#    Time: 160 ps  Iteration: 0  Instance: /testevenp
+# 1
+# Break in Module testevenp at C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v line 79
+vsim -gui Mini_Project.testevenp
+# End time: 09:21:24 on Dec 19,2021, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 7
+# vsim -gui Mini_Project.testevenp 
+# Start time: 09:21:24 on Dec 19,2021
+# Loading Mini_Project.testevenp
+# Loading Mini_Project.Evenp
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (9) for port 'choice'. The port definition is at: C:/intelFPGA/Projects/DDS_Mini_Project/design.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testevenp/O File: C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v Line: 6
+add wave sim:/testevenp/O/*
+run
+# Fault Detected:a stuck @0
+#                    0 value of a=0,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                   10 value of a=0,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                   20 value of a=0,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                   30 value of a=0,b=1,c=1;;intermediate Output w=1,Final Output P=0
+#                   40 value of a=1,b=0,c=0;;intermediate Output w=0,Final Output P=0
+#                   50 value of a=1,b=0,c=1;;intermediate Output w=0,Final Output P=1
+#                   60 value of a=1,b=1,c=0;;intermediate Output w=1,Final Output P=1
+#                   70 value of a=1,b=1,c=1;;intermediate Output w=1,Final Output P=0
+# ** Note: $finish    : C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v(79)
+#    Time: 80 ps  Iteration: 0  Instance: /testevenp
+# 1
+# Break in Module testevenp at C:/intelFPGA/Projects/DDS_Mini_Project/testbench.v line 79
+add wave -r /*
+add wave -r sim:/testevenp/O/*
